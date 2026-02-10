@@ -2,17 +2,17 @@
  * Firebase setup
  ******************************/
 const firebaseConfig = {
-  apiKey: "AIzaSyDmi-1xhMNBhuOthnnEVNqPWui2HvUN3yk",
-  authDomain: "later-log.firebaseapp.com",
-  projectId: "later-log",
-  storageBucket: "later-log.firebasestorage.app",
-  messagingSenderId: "40423113360",
-  appId: "1:40423113360:web:d7f7fec21396b36740ce15"
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTHDOMAIN.firebaseapp.com",
+  projectId: "PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET.firebasestorage.app",
+  messagingSenderId: "MESSAGEINGSENDERID",
+  appId: "APPID"
 };
 
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
-const collectionRef = db.collection("LaterLogs");
+const collectionRef = db.collection("YOUR COLLECTION NAME");
 
 /******************************
  * DOM references
@@ -104,3 +104,4 @@ function renderItem(doc) {
 /* expose functions used by HTML */
 window.updateDocument = updateDocument;
 window.deleteDocument = deleteDocument;
+
