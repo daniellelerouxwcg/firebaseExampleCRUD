@@ -38,7 +38,7 @@ service cloud.firestore {
 }
 ```
 
-> ⚠️ This allows anyone to access your database and is not safe for production.
+> This allows anyone to access your database and is not safe for production.
 
 * For production, enable authentication (e.g., Firebase Authentication):
 
@@ -120,7 +120,7 @@ firebase init
    * Answer whether it is a single-page app (based on your routing setup).
    * Choose whether to configure GitHub deploys.
 
-✅ After initialization, you should see:
+After initialization, you should see:
 
 ```
 +  Wrote configuration info to firebase.json
